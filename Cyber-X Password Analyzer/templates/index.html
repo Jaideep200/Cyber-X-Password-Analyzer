@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Security Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- MATRIX BACKGROUND -->
+
+    <canvas id="matrix"></canvas>
+
+    <!-- MAIN LAYOUT -->
+
+    <div class="mainLayout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div>
+
+                <h1 class="logo">
+                    CYBER-X
+                </h1>
+
+                <ul class="menu">
+
+                    <li>Dashboard</li>
+
+                    <li>Password Logs</li>
+
+                    <li>Threat Analysis</li>
+
+                    <li>Security Center</li>
+
+                </ul>
+
+            </div>
+
+            <!-- STATUS CARD -->
+
+            <div class="statusCard">
+
+                <h2>
+                    SYSTEM STATUS
+                </h2>
+
+                <p>Firewall : ACTIVE</p>
+
+                <p>Encryption : ENABLED</p>
+
+                <p>Threats : 0</p>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+
+        <main class="content">
+
+            <!-- TOP BAR -->
+
+            <div class="topBar">
+
+                <div>
+
+                    <h1 class="dashboardTitle">
+                        Cybersecurity Dashboard
+                    </h1>
+
+                    <p class="subTitle">
+                        Real-Time Password Threat Analysis
+                    </p>
+
+                </div>
+
+                <div class="onlineBox">
+
+                    SYSTEM ONLINE
+
+                </div>
+
+            </div>
+
+            <!-- STATS -->
+
+            <div class="statsGrid">
+
+                <div class="card">
+
+                    <h2>Passwords Checked</h2>
+
+                    <p class="greenText">
+                        1,248
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Threat Level</h2>
+
+                    <p class="yellowText">
+                        LOW
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Security Score</h2>
+
+                    <p class="cyanText">
+                        92%
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ANALYZER -->
+
+            <div class="glassCard">
+
+                <h1 class="analyzerTitle">
+                    Password Analyzer
+                </h1>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="ENTER PASSWORD"
+                    class="inputBox"
+                >
+
+                <button
+                    onclick="analyzePassword()"
+                    class="analyzeBtn"
+                >
+                    ANALYZE PASSWORD
+                </button>
+
+                <!-- STRENGTH BAR -->
+
+                <div class="meter">
+
+                    <div id="strengthBar"></div>
+
+                </div>
+
+                <!-- RESULTS -->
+
+                <div class="results">
+
+                    <h2 id="strengthText"></h2>
+
+                    <p id="entropy"></p>
+
+                    <p id="breach"></p>
+
+                    <p id="crackTime"></p>
+
+                    <p id="suggestion"></p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
