@@ -66,28 +66,7 @@ http://127.0.0.1:5000
 🔥 Responsive Layout
 🔥 Animated Strength Meter
 
-📸 Screenshots
 
-Add screenshots here after uploading images.
-
-Example:
-
-![Dashboard Screenshot](images/dashboard.png)
-🚀 Future Improvements
-User Authentication
-Password History Database
-Threat Heatmaps
-Admin Dashboard
-Docker Deployment
-AI Security Assistant
-Cloud Hosting
-📌 Educational Purpose
-
-This project was built for:
-
-learning cybersecurity fundamentals
-improving Flask + JavaScript skills
-creating a portfolio-ready security project
 👨‍💻 Author
 
 Developed by Your Name
