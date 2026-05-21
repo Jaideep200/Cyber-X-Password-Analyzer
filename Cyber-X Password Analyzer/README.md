@@ -3,7 +3,6 @@
 A modern cybersecurity-themed password analysis web application with a futuristic hacker dashboard UI.
 
 🚀 Features
-
 ✅ Real-Time Password Strength Analysis
 ✅ Password Entropy Calculation
 ✅ Password Breach Detection
