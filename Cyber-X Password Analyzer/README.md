@@ -90,4 +90,4 @@ improving Flask + JavaScript skills
 creating a portfolio-ready security project
 👨‍💻 Author
 
-Developed by Jaideep Singh
+Developed by Your Name
